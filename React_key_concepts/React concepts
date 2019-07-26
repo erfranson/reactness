@@ -1,0 +1,43 @@
+React concepts
+
+1. Don't touch the dom i'll do it
+
+imparative paradigm: you directly change individual parts of your app in response to various user events
+
+Declarative paradigm: handles repaint or change an element and add it on to a page, and reflow or recaluate the layout of the page and move things around if need be.  And does it for you. 
+
+we are basically creating a blue print while declaring the state. So based on what the state or data of the app is, react reacts to it and changes everything for you so you get the display you want. 
+
+2. Build websites like lego blocks
+
+build apps with components so you can reuse your code across your web app, and build a bigger end product, while being able to easily manage each components.
+
+components are basically just javascript functions or javascript class that receive some sort of input or attributes called props, and in return it returns JSX which looks like html inside of javascript.
+
+3. Unidirectional data flow
+
+our react components take the state and jsx, then creates a virtualDOM, and modifies the dom for us. 
+Anytime we want something to change on our webpage the state needs to change in our app. So if you sign out react reacts to the change to our state and then updates the page accordingly. so the data only flows one way.
+
+State => JSX => components => virtualDOM => react
+
+data only trickles down the state of a component can only affect itself and the components below it. This helps alot with debugging. see below*
+
+**
+        component
+    component   component
+component   component   component
+
+
+4. UI, The rest is up to you 
+
+doesn't care about about the tech stack you use
+
+things you can do with react
+
+- VR react 360
+- Web app
+- Desktop app with electron and react Desktop
+- Moblie apps react native
+- Termial React bless
+
