@@ -9,7 +9,8 @@ class App extends Component {
     this.state={
       monsters: [
       
-      ]  
+      ],
+      searchField: ''  
     };
   }
 
@@ -20,15 +21,18 @@ class App extends Component {
   }
 
   render(){
+    const {} = this.state;
     return (
       <div className="App">
+      <input 
+        type='search' 
+        placeholder='search monsters' 
+        onChange={e => this.setState({searchField: e.target.value}, () => console.log(this.state) )} // this.setState happens asynchronous and not immediately, so you have to pass the console log as the second argument of the setSet state for it to read the update. 
+      />
       <CardList 
-        name= "Ethan"
+        monsters = {this.state.monsters}
       >
-       {
-          this.state.monsters.map(monster => (
-          <h1 key={monster.id}> {monster.name} </h1>
-        ))}
+       
       </CardList>
         
       </div>
