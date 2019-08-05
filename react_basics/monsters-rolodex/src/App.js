@@ -7,9 +7,7 @@ class App extends Component {
     super();
 
     this.state={
-      monsters: [
-      
-      ],
+      monsters: [],
       searchField: ''  
     };
   }
@@ -21,7 +19,14 @@ class App extends Component {
   }
 
   render(){
-    const {} = this.state;
+    const {monsters, searchField} = this.state;
+    const filteredMonsters = monsters.filter(monster => 
+      monster.name.toLowerCase().includes(searchField.toLowerCase())
+      );
+      console.log(filteredMonsters)
+    // this is the same as 
+    // const monsters = this.state.monsters
+    // const searchField = this.state.searchField
     return (
       <div className="App">
       <input 
@@ -29,11 +34,7 @@ class App extends Component {
         placeholder='search monsters' 
         onChange={e => this.setState({searchField: e.target.value}, () => console.log(this.state) )} // this.setState happens asynchronous and not immediately, so you have to pass the console log as the second argument of the setSet state for it to read the update. 
       />
-      <CardList 
-        monsters = {this.state.monsters}
-      >
-       
-      </CardList>
+      <CardList monsters={filteredMonsters}/>
         
       </div>
     );
