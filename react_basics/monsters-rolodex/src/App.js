@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import { CardList } from './components/card-list/card-list.component'; 
+import { SearchBox } from './components/search-box/search-box.component';
 import './App.css';
 
 class App extends Component {
@@ -29,10 +30,9 @@ class App extends Component {
     // const searchField = this.state.searchField
     return (
       <div className="App">
-      <input 
-        type='search' 
-        placeholder='search monsters' 
-        onChange={e => this.setState({searchField: e.target.value}, () => console.log(this.state) )} // this.setState happens asynchronous and not immediately, so you have to pass the console log as the second argument of the setSet state for it to read the update. 
+      <SearchBox
+        placeholder = 'search monsters'
+        handleChange = {e => this.setState({searchField: e.target.value}, () => console.log(this.state) )} // this.setState happens asynchronous and not immediately, so you have to pass the console log as the second argument of the setSet state for it to read the update. 
       />
       <CardList monsters={filteredMonsters}/>
         
