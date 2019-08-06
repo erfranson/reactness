@@ -8,6 +8,12 @@
   pointer-events: none;
 }
 
+h1{
+  font-family: 'Bigelow Rules', cursive;
+  font-size: 72px;
+  color: #adca0c;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;

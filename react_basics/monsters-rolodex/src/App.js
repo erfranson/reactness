@@ -11,12 +11,17 @@ class App extends Component {
       monsters: [],
       searchField: ''  
     };
+
   }
 
   componentDidMount(){
     fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => response.json())
     .then(user => this.setState({ monsters: user}));
+  }
+
+  handleChange = (e) => {
+    this.setState({searchField: e.target.value}, () => console.log(this.state));
   }
 
   render(){
@@ -30,9 +35,10 @@ class App extends Component {
     // const searchField = this.state.searchField
     return (
       <div className="App">
+      <h1>Monsters Rolodex</h1>
       <SearchBox
         placeholder = 'search monsters'
-        handleChange = {e => this.setState({searchField: e.target.value}, () => console.log(this.state) )} // this.setState happens asynchronous and not immediately, so you have to pass the console log as the second argument of the setSet state for it to read the update. 
+        handleChange = {this.handleChange} 
       />
       <CardList monsters={filteredMonsters}/>
         
