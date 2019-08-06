@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/reactness/react_basics/monsters-rolodex/static/css/main.fb7cca4b.chunk.css",
-    "main.js": "/reactness/react_basics/monsters-rolodex/static/js/main.fa68744c.chunk.js",
-    "main.js.map": "/reactness/react_basics/monsters-rolodex/static/js/main.fa68744c.chunk.js.map",
-    "runtime~main.js": "/reactness/react_basics/monsters-rolodex/static/js/runtime~main.359f4376.js",
-    "runtime~main.js.map": "/reactness/react_basics/monsters-rolodex/static/js/runtime~main.359f4376.js.map",
-    "static/js/2.65aa1cca.chunk.js": "/reactness/react_basics/monsters-rolodex/static/js/2.65aa1cca.chunk.js",
-    "static/js/2.65aa1cca.chunk.js.map": "/reactness/react_basics/monsters-rolodex/static/js/2.65aa1cca.chunk.js.map",
-    "index.html": "/reactness/react_basics/monsters-rolodex/index.html",
-    "precache-manifest.fce2950fad1f2174d565406e36403ebc.js": "/reactness/react_basics/monsters-rolodex/precache-manifest.fce2950fad1f2174d565406e36403ebc.js",
-    "service-worker.js": "/reactness/react_basics/monsters-rolodex/service-worker.js",
-    "static/css/main.fb7cca4b.chunk.css.map": "/reactness/react_basics/monsters-rolodex/static/css/main.fb7cca4b.chunk.css.map"
+    "main.css": "/reactness/static/css/main.fb7cca4b.chunk.css",
+    "main.js": "/reactness/static/js/main.d1410fbc.chunk.js",
+    "main.js.map": "/reactness/static/js/main.d1410fbc.chunk.js.map",
+    "runtime~main.js": "/reactness/static/js/runtime~main.75c24a44.js",
+    "runtime~main.js.map": "/reactness/static/js/runtime~main.75c24a44.js.map",
+    "static/js/2.65aa1cca.chunk.js": "/reactness/static/js/2.65aa1cca.chunk.js",
+    "static/js/2.65aa1cca.chunk.js.map": "/reactness/static/js/2.65aa1cca.chunk.js.map",
+    "index.html": "/reactness/index.html",
+    "precache-manifest.c5e9b93d69b84db24bbb168eecf46c82.js": "/reactness/precache-manifest.c5e9b93d69b84db24bbb168eecf46c82.js",
+    "service-worker.js": "/reactness/service-worker.js",
+    "static/css/main.fb7cca4b.chunk.css.map": "/reactness/static/css/main.fb7cca4b.chunk.css.map"
   }
 }
