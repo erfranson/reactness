@@ -2,7 +2,7 @@
   "name": "mosters-rolodex",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://erfranson.github.io/reactness/react_basics/monsters-rolodex/",
+  "homepage": "https://erfranson.github.io/reactness/",
   "dependencies": {
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
